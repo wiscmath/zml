@@ -17,6 +17,7 @@ jobs:
           ls ${{ github.workspace }}
       - uses: adrianjost/files-sync-action@v2.0.4
         with:
+          GITHUB_TOKEN: '${{ secrets.RAJKIAK_TOKEN }}'
           GIT_EMAIL: nrajikak@gmail.com
           FILE_PATTERNS: |
             ^LICENSE$
@@ -24,7 +25,6 @@ jobs:
             README.md
             .gitignore
             src/
-          GITHUB_TOKEN: '${{ secrets.RAJKIKA_TOKEN }}'
           TARGET_REPOS: |
             rajikak/zmath:main
 
