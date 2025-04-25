@@ -1,4 +1,4 @@
-name: add code changes
+name: run unit tests
 run-name: ${{ github.actor }} is updating repos using GitHub Actions 🚀
 on: [push]
 jobs:
@@ -15,17 +15,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - uses: adrianjost/files-sync-action@v2.0.4
-        with:
-          GITHUB_TOKEN: '${{ secrets.RAJKIAK_TOKEN }}'
-          GIT_EMAIL: nrajikak@gmail.com
-          FILE_PATTERNS: |
-            ^LICENSE$
-            ^.github/workflows/sync-.*
-            README.md
-            .gitignore
-            src/
-          TARGET_REPOS: |
-            rajikak/zmath:main
-
+          echo 'run zig test with a zig compiler' 
       - run: echo "🍏 This job's status is ${{ job.status }}."
