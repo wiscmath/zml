@@ -1,4 +1,4 @@
-Fast, cross-platform math library in Zig.
+Fast, small, cross-platform mathematics library in Zig.
 
 # References
 * [From Mathematics to Generic Programming](http://www.fm2gp.com)

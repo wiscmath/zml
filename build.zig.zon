@@ -1,0 +1,12 @@
+.{
+    .name = .zml,
+    .version = "0.0.1",
+    .dependencies = .{},
+    .fingerprint = 0x32700c0ddb46d0a3,
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "README.md",
+    },
+}
