@@ -22,6 +22,21 @@ pub const sqrtpi = 1.7724538509055160272981674833411451827975494561223871282138;
 // sqrt(phi) - https://oeis.org/A139339
 pub const sqrtphi = 1.2720196495140689642524224617374914917156080418400; 
 
+// Circle constant (τ) 
+pub const tau = 2 * pi;
+
+// ln(2) - https://oeis.org/A002162
+pub const ln2 =  0.693147180559945309417232121458176568075500134360255254120680009493393;
+
+// ln(10) - https://oeis.org/A002392
+pub const ln10 = 2.302585092994045684017991454684364207601101488628772976033327900967572; 
+
+// log2(e) - https://oeis.org/A007525
+pub const log2e = 1.442695040888963407359924681001892137; 
+
+// log10(e) - https://oeis.org/A002285
+pub const log10e = 0.434294481903251827651128918916605082; 
+
 test "display universal consts" {
     std.debug.print("{}\n", .{e});
     std.debug.print("{}\n", .{pi});
@@ -30,5 +45,10 @@ test "display universal consts" {
     std.debug.print("{}\n", .{sqrte});
     std.debug.print("{}\n", .{sqrtpi});
     std.debug.print("{}\n", .{sqrtphi});
+    std.debug.print("{}\n", .{tau});
+    std.debug.print("{}\n", .{ln2});
+    std.debug.print("{}\n", .{ln10});
+    std.debug.print("{}\n", .{log2e});
+    std.debug.print("{}\n", .{log10e});
 }
 
