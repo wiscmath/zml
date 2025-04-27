@@ -1,9 +1,9 @@
 const std = @import("std");
 const testing = std.testing;
+const assert = std.debug.assert;
 const c = @import("const.zig");
 
-
-test "using constants" {
+test "api:using constants" {
     std.debug.print("{}\n", .{c.e});
     std.debug.print("{}\n", .{c.pi});
     std.debug.print("{}\n", .{c.phi});
@@ -18,3 +18,8 @@ test "using constants" {
     std.debug.print("{}\n", .{c.log10e});
 }
 
+test "float approximations" {
+    const a = 0.1 + 0.123;
+    std.debug.print("{}\n", .{a});
+    assert((0.1 + 0.2) != 0.3);
+}
