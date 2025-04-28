@@ -20,3 +20,4 @@ Fast, small, cross-platform mathematics library in Zig.
 * https://sourceware.org/git/?p=glibc.git;a=blob;f=sysdeps/ieee754/dbl-64/s_sin.c;hb=HEAD#l194
 * https://git.musl-libc.org/cgit/musl/tree/src/math/sin.c
 * https://github.com/golang/go/blob/master/src/math/sin.go#L185
+* https://www.netlib.org/fdlibm/s_sin.c
